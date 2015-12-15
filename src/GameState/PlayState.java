@@ -239,12 +239,12 @@ public class PlayState extends GameState {
 				player.setJumpedOnce(true);
 			}
 		}
-		if (k == KeyEvent.VK_R) {
-			player.setBombAll();
-			player.BombAll(enemies);
-		}
-
 		if ((int) (elapsed / 1000) > 2) {
+			if (k == KeyEvent.VK_R) {
+				player.setBombAll();
+				player.BombAll(enemies);
+			}
+
 			if (k == KeyEvent.VK_ENTER) {
 				if (!alreadyPause) {
 					pause = !pause;
