@@ -244,12 +244,14 @@ public class PlayState extends GameState {
 			player.BombAll(enemies);
 		}
 
-		if (k == KeyEvent.VK_ENTER) {
-			if (!alreadyPause) {
-				pause = !pause;
-				alreadyPause = true;
-			}
+		if ((int) (elapsed / 1000) > 2) {
+			if (k == KeyEvent.VK_ENTER) {
+				if (!alreadyPause) {
+					pause = !pause;
+					alreadyPause = true;
+				}
 
+			}
 		}
 
 	}
@@ -261,10 +263,9 @@ public class PlayState extends GameState {
 			player.setJumping(false);
 			player.setJumpedOnce(false);
 		}
+
 		if (k == KeyEvent.VK_ENTER) {
-
 			alreadyPause = false;
-
 		}
 	}
 
