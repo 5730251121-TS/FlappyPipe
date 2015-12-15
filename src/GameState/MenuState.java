@@ -18,12 +18,12 @@ public class MenuState extends GameState {
 	private AudioPlayer selectSound;
 
 	private int currentChoice = 0;
-	private String[] options = { "Start", "High Score", "Quit" };
+	private String[] options = { "Start", "High Score", "HELP", "Quit" };
 
 	public MenuState(GameStateManager gsm) {
 		this.gsm = gsm;
 
-		bg = new Background("/bg/titleanimation3.gif");
+		bg = new Background("/bg/titleanimation.gif");
 		optionSound = new AudioPlayer("/SFX/optionsound.wav");
 		selectSound = new AudioPlayer("/SFX/coin.wav");
 
@@ -64,11 +64,13 @@ public class MenuState extends GameState {
 
 		// draw floating head
 		if (currentChoice == 0)
-			g.drawImage(head, 210, 230, null);
+			g.drawImage(head, 225, 200, null);
 		if (currentChoice == 1)
-			g.drawImage(head, 180, 325, null);
+			g.drawImage(head, 175, 270, null);
 		if (currentChoice == 2)
-			g.drawImage(head, 255, 405, null);
+			g.drawImage(head, 250, 340, null);
+		if (currentChoice == 3)
+			g.drawImage(head, 250, 410, null);
 
 	}
 
@@ -82,6 +84,10 @@ public class MenuState extends GameState {
 			selectSound.play();
 			gsm.setState(GameStateManager.SCORESTATE);
 		} else if (currentChoice == 2) {
+			// help
+			selectSound.play();
+			gsm.setState(GameStateManager.HELPSTATE);
+		} else if (currentChoice == 3) {
 			// quit
 			System.exit(0);
 		}
