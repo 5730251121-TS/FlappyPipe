@@ -25,6 +25,7 @@ and bomber bird). The normal birds could be finished by hitting the pipe. If
 normal birds fly through the pipe, you will lose a life point. The bomber birds
 could be finished by letting them through the pipe. If bomber birds hit the
 pipe, you will lose a life point.
-Every time you lose a life point, the pipe will be flinching for 2
+
+  Every time you lose a life point, the pipe will be flinching for 2
 seconds and it can’t take any damage when it is flinching.
 
