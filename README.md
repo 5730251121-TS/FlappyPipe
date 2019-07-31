@@ -7,15 +7,21 @@
 
 ## How to install
 
-1. Clone this project or Just download FlappyPipe.exe
-2. Enjoy the game!!
+1. Clone this project 
+2. run command ```java -jar FlappyPipe.jar```
+3. or Just download FlappyPipe.exe
+4. Enjoy the game!!
 
 
 ## How to play
 
+![HowToPlay1](/howToplay1.png)
+
   This is a game with a goal to get the most score by finish the
 enemies. Figure 1 shows the menu screen which you can choose start option,
 high score option, help option or quitting the game.
+
+![HowToPlay2](/howToplay2.png)
 
   There are 3 keys that you can use when the game is running. The
 first is “spacebar” for pipe jumping. The second is “R key” for using bomb
@@ -28,4 +34,8 @@ pipe, you will lose a life point.
 
   Every time you lose a life point, the pipe will be flinching for 2
 seconds and it can’t take any damage when it is flinching.
+
+
+
+
 
